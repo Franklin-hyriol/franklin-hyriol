@@ -1,2 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+@theme {
+    --font-dancing-script: "Dancing Script", cursive;
+}
+
+
+
+@utility main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (width >=40rem) {
+        padding: 0 20px;
+        max-width: 42.5rem;
+        /* 680px */
+    }
+
+    @media (width >=48rem) {
+        padding: 0 20px;
+        max-width: 50.5rem;
+        /* 808px */
+    }
+
+    @media (width >=64rem) {
+        padding: 0 40px;
+        max-width: 69rem;
+        /* 1104px */
+    }
+
+    @media (width >=80rem) {
+        padding: 0 40px;
+        max-width: 85rem;
+        /* 1360px */
+    }
+}
