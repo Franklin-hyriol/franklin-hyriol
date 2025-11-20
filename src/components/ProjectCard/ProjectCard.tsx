@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   image: string;
@@ -10,7 +11,7 @@ interface ProjectCardProps {
 
 function ProjectCard({ image, alt, title, description, type, url }: ProjectCardProps) {
   return (
-    <a className="hover-3d" href={url} data-type={type}>
+    <Link className="hover-3d" to={url} data-type={type}>
       {/* content */}
 
       <div className="card bg-base-100 w-96 shadow-sm">
@@ -37,7 +38,7 @@ function ProjectCard({ image, alt, title, description, type, url }: ProjectCardP
       <div></div>
       <div></div>
       <div></div>
-    </a>
+    </Link>
   );
 }
 

@@ -6,7 +6,7 @@
         "image": "/screenshot/PrayTogether-dark.png",
         "alt": "Pray Together screenshot https://pray.up.railway.app/",
         "type": "Fullstack Next/Express",
-        "url": "https://pray.up.railway.app/"
+        "url": "/project/pray-together"
     },
     {
         "name": "EyeChallenge",
@@ -15,7 +15,7 @@
         "image": "/screenshot/EyeChallenge-dark.png",
         "alt": "Eye Challenge screenshot https://www.eyechallenge.fun/",
         "type": "Fullstack Next",
-        "url": "https://www.eyechallenge.fun/"
+        "url": "/project/eye-challenge"
     },
     {
         "name": "IntervalTimer",
@@ -24,7 +24,7 @@
         "image": "/screenshot/IntervalTimer-dark.png",
         "alt": "Interval Timer screenshot https://www.intervaltimer.fun/",
         "type": "vanilla",
-        "url": "https://www.intervaltimer.fun/"
+        "url": "/project/interval-timer"
     },
     {
         "name": "greengascar",
@@ -33,7 +33,7 @@
         "image": "/screenshot/greengascar.png",
         "alt": "Greengascar screenshot https://greengascar.pulse.mg/",
         "type": "Next",
-        "url": "https://greengascar.pulse.mg/"
+        "url": "/project/greengascar"
     },
     {
         "name": "contact.ravinala",
@@ -42,7 +42,7 @@
         "image": "/screenshot/contact.ravinala-light.png",
         "alt": "contact.ravinala screenshot https://contact.ravinala-airports.aero/",
         "type": "React",
-        "url": "https://contact.ravinala-airports.aero/"
+        "url": "/project/contact-ravinala"
     },
     {
         "name": "plottracking",
@@ -51,7 +51,7 @@
         "image": "/screenshot/plottracking.png",
         "alt": "Plottracking screenshot https://plottracking.bondy.earth/",
         "type": "React",
-        "url": "https://plottracking.bondy.earth/"
+        "url": "/project/plottracking"
     },
     {
         "name": "verletJs",
@@ -60,7 +60,7 @@
         "image": "/screenshot/verletjs.png",
         "alt": "verlet screenshot #",
         "type": "vanilla React",
-        "url": "/#"
+        "url": "/project/verlet-js"
     },
     {
         "name": "solitaire",
@@ -69,7 +69,7 @@
         "image": "/screenshot/solitaire.png",
         "alt": "Spider Solitaire screenshot https://solimillion.netlify.app/",
         "type": "React",
-        "url": "https://solimillion.netlify.app/"
+        "url": "/project/solitaire"
     },
     {
         "name": "nft-marketplace",
@@ -78,6 +78,6 @@
         "image": "/screenshot/nft-marketplace.png",
         "alt": "NFT Marketplace screenshot https://franklin-hyriol.github.io/nft-marketplace/",
         "type": "Integration",
-        "url": "https://franklin-hyriol.github.io/nft-marketplace/"
+        "url": "/project/nft-marketplace"
     }
 ]

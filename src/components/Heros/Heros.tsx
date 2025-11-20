@@ -3,7 +3,7 @@ import HeroImage from "./franklin.jpeg";
 
 function Heros() {
   return (
-    <div className="main-container h-[calc(100vh-64px)]">
+    <section id="home" className="main-container h-[calc(100vh-64px)]">
       <div className="flex justify-between gap-10 items-center  h-[calc(85vh-64px)]">
         <div className="basis-[50%] flex flex-col gap-10">
           <div className="flex flex-col gap-5">
@@ -41,7 +41,7 @@ function Heros() {
           </picture>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

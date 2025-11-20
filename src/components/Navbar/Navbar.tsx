@@ -13,19 +13,19 @@ function Navbar() {
         <nav className="navbar-center">
           <ul className="flex gap-5 text-base font-medium">
             <li>
-              <a className="hover:text-primary hover:underline" href="#home">Accueil</a>
+              <a className="hover:text-primary hover:underline" href="/#home">Accueil</a>
             </li>
             <li>
-              <a className="hover:text-primary hover:underline" href="#projects">Projets</a>
+              <a className="hover:text-primary hover:underline" href="/#projects">Projets</a>
             </li>
             <li>
-              <a className="hover:text-primary hover:underline" href="#about">À propos</a>
+              <a className="hover:text-primary hover:underline" href="/#about">À propos</a>
             </li>
             <li>
-              <a className="hover:text-primary hover:underline" href="#skills">Compétences</a>
+              <a className="hover:text-primary hover:underline" href="/#skills">Compétences</a>
             </li>
             <li>
-              <a className="hover:text-primary hover:underline" href="#contact">Contact</a>
+              <a className="hover:text-primary hover:underline" href="/#contact">Contact</a>
             </li>
           </ul>
         </nav>
