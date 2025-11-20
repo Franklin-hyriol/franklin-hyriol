@@ -7,7 +7,10 @@ function Heros() {
       <div className="flex justify-between gap-10 items-center  h-[calc(85vh-64px)]">
         <div className="basis-[50%] flex flex-col gap-10">
           <div className="flex flex-col gap-5">
-            <span className="text-2xl">Bonjour 👋</span>
+            <span className="text-2xl">
+              Bonjour
+              <span className="inline-block animate-wave ml-1">👋</span>
+            </span>
             <h1 className="text-5xl font-bold">
               Franklin Hyriol — Développeur Fullstack
             </h1>
@@ -19,8 +22,12 @@ function Heros() {
           </div>
 
           <div className="flex gap-4">
-            <button className="btn btn-lg">Télécharger mon CV <FaFileDownload /></button>
-            <button className="btn btn-primary btn-lg">Voir mes projets <FaArrowDown /></button>
+            <button className="btn btn-lg">
+              Télécharger mon CV <FaFileDownload />
+            </button>
+            <button className="btn btn-primary btn-lg">
+              Voir mes projets <FaArrowDown />
+            </button>
           </div>
         </div>
 

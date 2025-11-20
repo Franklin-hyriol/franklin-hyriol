@@ -1,3 +1,5 @@
+import ContactForm from "../ContactForm/ContactForm";
+
 function Contact() {
   return (
     <section className="pt-20 pb-20">
@@ -6,11 +8,14 @@ function Contact() {
           Me contacter
         </h2>
 
-        <p className="text-lg text-center w-[80%] mx-auto">
-          Je suis développeur fullstack (stack MERN) et je conçois des
-          applications web modernes, performantes et centrées sur l’expérience
-          utilisateur.
-        </p>
+        <div className="text-lg text-center w-[80%] mx-auto flex flex-col gap-5 mb-20">
+          <p>
+            Chaque message compte et j’adore découvrir de nouveaux projets.
+            N’hésitez pas à me contacter, je vous répondrai dès que possible.
+          </p>
+        </div>
+
+        <ContactForm />
       </div>
     </section>
   );
