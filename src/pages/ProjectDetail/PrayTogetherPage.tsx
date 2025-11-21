@@ -17,22 +17,24 @@ const PrayTogetherPage = () => {
           title="Pray Together"
           description="Pray Together est une application qui permet aux personnes de prier ensemble, où qu’elles soient. Elle offre un espace pour partager des intentions de prière et rejoindre des groupes de prière."
           live="https://pray.up.railway.app/"
-          github="#"
+          github="https://github.com/Franklin-hyriol/PrayTogether"
         />
 
         <ProjectImg
           url="https://pray.up.railway.app/"
-          img="/screenshot/PrayTogether-dark.png"
+          img="/PrayTogether/screen_2.jpg"
           alt="Capture d'écran de l'application Pray Together"
         />
 
         <Projetctech
           text={
             <>
-              L'application est construite avec <strong>Next.js</strong> pour le
-              frontend, un backend en <strong>Express.js</strong>, et une base
-              de données <strong>PostgreSQL</strong>. Le tout est déployé sur{" "}
-              <strong>Railway</strong>.
+              J’ai choisi <strong>Next.js</strong> pour la partie frontend, car
+              j’avais besoin du rendu côté serveur pour le SEO. Pour le backend,
+              j’ai utilisé <strong>Express.js</strong> que je trouve facile à
+              prendre en main pour des petits projets comme celui-ci. La base de
+              données est
+              <strong>MongoDB</strong>, hébergée sur MongoDB Atlas.
             </>
           }
         />
@@ -42,7 +44,7 @@ const PrayTogetherPage = () => {
             "Mettre en place une authentification sécurisée des utilisateurs.",
             "Créer une base de données relationnelle pour gérer les utilisateurs, les groupes et les intentions de prière.",
             "Développer une API RESTful pour la communication entre le frontend et le backend.",
-            "Assurer la mise à jour en temps réel des intentions de prière.",
+            "Assurer la mise à jour en temps réel des intentions de prière avec l'utilisation de WebSockets.",
             "Déployer l'application fullstack sur une plateforme cloud.",
           ]}
         />
@@ -50,22 +52,38 @@ const PrayTogetherPage = () => {
         <ProjectFeatures
           features={[
             "Création de compte et connexion.",
-            "Possibilité de créer et rejoindre des groupes de prière.",
+            "creation, consulation et suppression de priere.",
             "Ajout et consultation d'intentions de prière.",
             "Interface simple et épurée.",
-            "Notifications pour les nouvelles intentions de prière.",
+            "Notifications en temps réel pour les nouvelles intentions de prière.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/PrayTogether-light.png",
-              alt: "Mode clair de l'application",
+              url: "/PrayTogether/screen_1.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
             },
             {
-              url: "/screenshot/PrayTogether-dark.png",
-              alt: "Mode sombre de l'application",
+              url: "/PrayTogether/screen_2.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
+            },
+            {
+              url: "/PrayTogether/screen_3.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
+            },
+            {
+              url: "/PrayTogether/screen_4.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
+            },
+            {
+              url: "/PrayTogether/screen_5.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
+            },
+            {
+              url: "/PrayTogether/screen_6.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
             },
           ]}
         />
