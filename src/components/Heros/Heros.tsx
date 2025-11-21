@@ -15,9 +15,13 @@ function Heros() {
               Franklin Hyriol — Développeur Fullstack
             </h1>
             <p className="text-lg">
-              Je suis développeur fullstack (stack MERN) et je conçois des
-              applications web modernes, performantes et centrées sur
-              l’expérience utilisateur.
+              Passionné par l’informatique, j’ai passé mes nuits à apprendre
+              tout ce qui me tombait sous les yeux, à tester, casser et
+              reconstruire des trucs juste pour comprendre comment ça marchait.
+              Aujourd’hui, je suis devenu développeur web et intégrateur,
+              capable de transformer les maquettes et le cahier des charges en
+              applications fonctionnelles et agréables à utiliser. Bref, je fais
+              parler le papier grâce à un peu de magie du code.
             </p>
           </div>
 

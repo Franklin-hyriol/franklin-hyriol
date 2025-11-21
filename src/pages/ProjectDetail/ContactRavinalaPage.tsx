@@ -4,70 +4,63 @@ import ProjectImg from "../../components/ProjectDetails/ProjectImg";
 import ProjectChallenges from "../../components/ProjectDetails/ProjectChallenges";
 import ProjectFeatures from "../../components/ProjectDetails/ProjectFeatures";
 import ProjectGalerie from "../../components/ProjectDetails/ProjectGalerie";
+import { useEffect } from "react";
 
 const ContactRavinalaPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
-          title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides.  
-L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
-          live="https://www.eyechallenge.fun/"
-          github="https://github.com/ton-compte/eye-challenge"
+          title="Ravinala page contact"
+          description="C’est la page de contact du site Ravinalala Aéroport, où vous trouverez toutes les informations nécessaires pour les joindre et poser vos questions."
+          live="https://contact.ravinala-airports.aero/"
+          github="#"
         />
 
         <ProjectImg
-          url="https://www.eyechallenge.fun/"
-          img="/EyeChallenge/EyeChallenge-light.png"
-          alt="home page Eye Challenge https://www.eyechallenge.fun/"
+          url="https://contact.ravinala-airports.aero/"
+          img="/screenshot/contact.ravinala-light.png"
+          alt="Capture d'écran de la page contact de Ravinala"
         />
 
         <Projetctech
           text={
             <>
-              Hello <strong>React Typescript</strong>
+              La page a été développée en <strong>React</strong> avec{" "}
+              <strong>TypeScript</strong>, en utilisant{" "}
+              <strong>Tailwind CSS</strong> pour le style.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Création d’un design responsive inspiré de Figma",
-            "Gestion des scores en temps réel",
-            "Intégration de mini-jeux interactifs et animations fluides",
-            "Optimisation SEO et performance pour un chargement rapide",
-            "Gestion des erreurs et validation des formulaires avec Zod et React Hook Form",
+            "Créer un formulaire de contact clair et facile à utiliser.",
+            "Intégrer une carte interactive pour localiser l'aéroport.",
+            "Assurer la validation des champs du formulaire.",
+            "Mettre en place un système d'envoi d'email.",
+            "Rendre la page accessible aux personnes en situation de handicap.",
           ]}
         />
 
         <ProjectFeatures
           features={[
-            "Mini-jeux interactifs avec timer et score",
-            "Leaderboard pour comparer les performances",
-            "Responsive design pour tous les appareils",
-            "Animations CSS fluides pour feedback visuel",
-            "Validation de formulaire pour la soumission de score",
+            "Formulaire de contact.",
+            "Carte interactive.",
+            "Informations de contact.",
+            "FAQ.",
+            "Design responsive.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "https://placehold.co/800x400?text=Preview+1",
-              alt: "Screenshot 1",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+2",
-              alt: "Screenshot 2",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/contact.ravinala-light.png",
+              alt: "Page contact de Ravinala",
             },
           ]}
         />

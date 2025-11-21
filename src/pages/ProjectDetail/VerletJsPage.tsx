@@ -4,70 +4,76 @@ import ProjectImg from "../../components/ProjectDetails/ProjectImg";
 import ProjectChallenges from "../../components/ProjectDetails/ProjectChallenges";
 import ProjectFeatures from "../../components/ProjectDetails/ProjectFeatures";
 import ProjectGalerie from "../../components/ProjectDetails/ProjectGalerie";
+import { useEffect } from "react";
 
 const VerletJsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
-          title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides.  
-L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
-          live="https://www.eyechallenge.fun/"
-          github="https://github.com/ton-compte/eye-challenge"
+          title="Verlet Js"
+          description="Verlet.js est une bibliothèque JavaScript et React conçue pour simplifier la création de simulations physiques basées sur l'algorithme d'intégration de Verlet. Elle permet de simuler facilement des systèmes complexes comme des cordes, des tissus ou des particules interconnectées, avec une API simple et performante."
+          live="https://www.npmjs.com/package/verlet-js-react"
+          github="https://github.com/franklin-hyriol/verlet-js-react"
         />
 
         <ProjectImg
-          url="https://www.eyechallenge.fun/"
-          img="/EyeChallenge/EyeChallenge-light.png"
-          alt="home page Eye Challenge https://www.eyechallenge.fun/"
+          url="https://www.npmjs.com/package/verlet-js-react"
+          img="/screenshot/verletjs.png"
+          alt="Exemple de simulation avec Verlet.js"
         />
 
         <Projetctech
           text={
             <>
-              Hello <strong>React Typescript</strong>
+              Le projet a été développé en <strong>TypeScript</strong> et est
+              packagé avec <strong>Rollup</strong>. La documentation est générée
+              grâce à <strong>Docusaurus</strong>, assurant un site statique
+              performant et facile à maintenir.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Création d’un design responsive inspiré de Figma",
-            "Gestion des scores en temps réel",
-            "Intégration de mini-jeux interactifs et animations fluides",
-            "Optimisation SEO et performance pour un chargement rapide",
-            "Gestion des erreurs et validation des formulaires avec Zod et React Hook Form",
+            "Adapter l'algorithme de Verlet pour une utilisation générique en JavaScript.",
+            "Créer une API intuitive et flexible pour les développeurs.",
+            "Optimiser les calculs pour garantir des simulations fluides même avec un grand nombre de particules.",
+            "Développer un wrapper React (`verlet-js-react`) pour une intégration transparente dans les applications modernes.",
+            "Rédiger une documentation complète avec des exemples clairs.",
           ]}
         />
 
         <ProjectFeatures
           features={[
-            "Mini-jeux interactifs avec timer et score",
-            "Leaderboard pour comparer les performances",
-            "Responsive design pour tous les appareils",
-            "Animations CSS fluides pour feedback visuel",
-            "Validation de formulaire pour la soumission de score",
+            "Simulation de points, de contraintes (distances) et de gravité.",
+            "Création facile de systèmes complexes comme des cordes, des tissus et des formes rigides.",
+            "Composant React prêt à l'emploi pour une intégration rapide.",
+            "Aucune dépendance externe, léger et performant.",
+            "Documentation détaillée et exemples interactifs.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "https://placehold.co/800x400?text=Preview+1",
-              alt: "Screenshot 1",
+              url: "/screenshot/verletjs.png",
+              alt: "Simulation de corde",
             },
             {
-              url: "https://placehold.co/800x400?text=Preview+2",
-              alt: "Screenshot 2",
+              url: "/screenshot/verletjs.png",
+              alt: "Simulation de tissu",
             },
             {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/verletjs.png",
+              alt: "Exemple d'intégration",
             },
             {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/verletjs.png",
+              alt: "Documentation",
             },
           ]}
         />

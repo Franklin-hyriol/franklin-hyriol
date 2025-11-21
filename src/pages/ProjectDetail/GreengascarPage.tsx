@@ -4,70 +4,63 @@ import ProjectImg from "../../components/ProjectDetails/ProjectImg";
 import ProjectChallenges from "../../components/ProjectDetails/ProjectChallenges";
 import ProjectFeatures from "../../components/ProjectDetails/ProjectFeatures";
 import ProjectGalerie from "../../components/ProjectDetails/ProjectGalerie";
+import { useEffect } from "react";
 
 const GreengascarPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
-          title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides.  
-L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
-          live="https://www.eyechallenge.fun/"
-          github="https://github.com/ton-compte/eye-challenge"
+          title="Greengascar"
+          description="Greengascar est une application qui vous permet de calculer votre empreinte carbone à travers de petites questions sur vos activités quotidiennes."
+          live="https://greengascar.pulse.mg/"
+          github="#"
         />
 
         <ProjectImg
-          url="https://www.eyechallenge.fun/"
-          img="/EyeChallenge/EyeChallenge-light.png"
-          alt="home page Eye Challenge https://www.eyechallenge.fun/"
+          url="https://greengascar.pulse.mg/"
+          img="/screenshot/greengascar.png"
+          alt="Capture d'écran de l'application Greengascar"
         />
 
         <Projetctech
           text={
             <>
-              Hello <strong>React Typescript</strong>
+              Greengascar a été développé avec <strong>Next.js</strong> et{" "}
+              <strong>TypeScript</strong>, en utilisant{" "}
+              <strong>Tailwind CSS</strong> pour le style.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Création d’un design responsive inspiré de Figma",
-            "Gestion des scores en temps réel",
-            "Intégration de mini-jeux interactifs et animations fluides",
-            "Optimisation SEO et performance pour un chargement rapide",
-            "Gestion des erreurs et validation des formulaires avec Zod et React Hook Form",
+            "Créer un questionnaire intuitif et engageant.",
+            "Calculer l'empreinte carbone de manière précise.",
+            "Présenter les résultats de manière claire et compréhensible.",
+            "Sensibiliser les utilisateurs à l'impact de leurs actions.",
+            "Proposer des alternatives pour réduire son empreinte carbone.",
           ]}
         />
 
         <ProjectFeatures
           features={[
-            "Mini-jeux interactifs avec timer et score",
-            "Leaderboard pour comparer les performances",
-            "Responsive design pour tous les appareils",
-            "Animations CSS fluides pour feedback visuel",
-            "Validation de formulaire pour la soumission de score",
+            "Questionnaire sur les habitudes de vie.",
+            "Calcul de l'empreinte carbone.",
+            "Conseils pour réduire son impact environnemental.",
+            "Interface ludique et éducative.",
+            "Partage des résultats sur les réseaux sociaux.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "https://placehold.co/800x400?text=Preview+1",
-              alt: "Screenshot 1",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+2",
-              alt: "Screenshot 2",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/greengascar.png",
+              alt: "Page d'accueil de Greengascar",
             },
           ]}
         />

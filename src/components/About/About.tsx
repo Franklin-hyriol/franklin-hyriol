@@ -128,7 +128,7 @@ function About() {
                   Knowledge Base, j’ai évolué vers un poste{" "}
                   <strong>d’intégrateur WordPress / Elementor.</strong>{" "}
                   Parallèlement, mes compétences en
-                  <strong>développement front-end</strong>, notamment en React,
+                  <strong> développement front-end</strong>, notamment en React,
                   m’ont permis d’intervenir sur plusieurs projets en React.js et
                   de collaborer étroitement avec l’équipe DevOps.
                 </p>
@@ -160,7 +160,7 @@ function About() {
                 </div>
                 <p className="mb-4">
                   Je n’ai pas encore occupé officiellement un poste de
-                  <strong>développeur fullstack</strong> en entreprise, mais
+                  <strong> développeur fullstack</strong> en entreprise, mais
                   j’ai travaillé sur la partie back-end et front-end dans le
                   cadre de mes stages et de mes formations.
                 </p>
@@ -196,7 +196,7 @@ function About() {
               <strong>baccalauréat</strong>, j’ai été admis à la{" "}
               <strong>Faculté des Sciences</strong> de l’Université d’Ankatso,
               au département de
-              <strong>Mathématiques</strong>, de 2017 à 2019.
+              <strong> Mathématiques</strong>, de 2017 à 2019.
             </p>
 
             <p>

@@ -4,70 +4,63 @@ import ProjectImg from "../../components/ProjectDetails/ProjectImg";
 import ProjectChallenges from "../../components/ProjectDetails/ProjectChallenges";
 import ProjectFeatures from "../../components/ProjectDetails/ProjectFeatures";
 import ProjectGalerie from "../../components/ProjectDetails/ProjectGalerie";
+import { useEffect } from "react";
 
 const SolitairePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
-          title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides.  
-L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
-          live="https://www.eyechallenge.fun/"
-          github="https://github.com/ton-compte/eye-challenge"
+          title="Spider Solitaire Online"
+          description="Spider Solitaire Online est une version web du célèbre Spider Solitaire de Windows 7."
+          live="https://solimillion.netlify.app/"
+          github="https://github.com/franklin-hyriol/solitaire"
         />
 
         <ProjectImg
-          url="https://www.eyechallenge.fun/"
-          img="/EyeChallenge/EyeChallenge-light.png"
-          alt="home page Eye Challenge https://www.eyechallenge.fun/"
+          url="https://solimillion.netlify.app/"
+          img="/screenshot/solitaire.png"
+          alt="Capture d'écran du jeu Spider Solitaire"
         />
 
         <Projetctech
           text={
             <>
-              Hello <strong>React Typescript</strong>
+              Le jeu a été développé en <strong>React</strong> avec{" "}
+              <strong>TypeScript</strong>, en utilisant{" "}
+              <strong>Tailwind CSS</strong> pour le style.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Création d’un design responsive inspiré de Figma",
-            "Gestion des scores en temps réel",
-            "Intégration de mini-jeux interactifs et animations fluides",
-            "Optimisation SEO et performance pour un chargement rapide",
-            "Gestion des erreurs et validation des formulaires avec Zod et React Hook Form",
+            "Recréer la logique du jeu Spider Solitaire.",
+            "Gérer le drag and drop des cartes.",
+            "Implémenter les règles du jeu, y compris les différents niveaux de difficulté.",
+            "Créer une interface utilisateur fidèle à l'original.",
+            "Assurer la fluidité des animations.",
           ]}
         />
 
         <ProjectFeatures
           features={[
-            "Mini-jeux interactifs avec timer et score",
-            "Leaderboard pour comparer les performances",
-            "Responsive design pour tous les appareils",
-            "Animations CSS fluides pour feedback visuel",
-            "Validation de formulaire pour la soumission de score",
+            "Jeu de Spider Solitaire complet.",
+            "Plusieurs niveaux de difficulté.",
+            "Annulation des mouvements.",
+            "Statistiques de jeu.",
+            "Design responsive.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "https://placehold.co/800x400?text=Preview+1",
-              alt: "Screenshot 1",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+2",
-              alt: "Screenshot 2",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/solitaire.png",
+              alt: "Partie de Spider Solitaire en cours",
             },
           ]}
         />
@@ -75,6 +68,5 @@ L’objectif était de créer une interface moderne, engageante et fun, qui gard
     </div>
   );
 };
-
 
 export default SolitairePage;

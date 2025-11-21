@@ -4,70 +4,63 @@ import ProjectImg from "../../components/ProjectDetails/ProjectImg";
 import ProjectChallenges from "../../components/ProjectDetails/ProjectChallenges";
 import ProjectFeatures from "../../components/ProjectDetails/ProjectFeatures";
 import ProjectGalerie from "../../components/ProjectDetails/ProjectGalerie";
+import { useEffect } from "react";
 
 const PlottrackingPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
-          title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides.  
-L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
-          live="https://www.eyechallenge.fun/"
-          github="https://github.com/ton-compte/eye-challenge"
+          title="Plottracking by Bondy"
+          description="Plottracking est une application utilisée par la compagnie Bondy pour suivre la croissance de leurs plantations d’arbres."
+          live="https://plottracking.bondy.earth/"
+          github="#"
         />
 
         <ProjectImg
-          url="https://www.eyechallenge.fun/"
-          img="/EyeChallenge/EyeChallenge-light.png"
-          alt="home page Eye Challenge https://www.eyechallenge.fun/"
+          url="https://plottracking.bondy.earth/"
+          img="/screenshot/plottracking.png"
+          alt="Capture d'écran de l'application Plottracking"
         />
 
         <Projetctech
           text={
             <>
-              Hello <strong>React Typescript</strong>
+              L'application a été développée en <strong>React</strong> avec{" "}
+              <strong>TypeScript</strong>, en utilisant{" "}
+              <strong>Tailwind CSS</strong> pour le style.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Création d’un design responsive inspiré de Figma",
-            "Gestion des scores en temps réel",
-            "Intégration de mini-jeux interactifs et animations fluides",
-            "Optimisation SEO et performance pour un chargement rapide",
-            "Gestion des erreurs et validation des formulaires avec Zod et React Hook Form",
+            "Mettre en place un système de suivi des parcelles de plantation.",
+            "Permettre l'ajout et la modification des données de croissance des arbres.",
+            "Visualiser les données sous forme de graphiques et de tableaux.",
+            "Gérer les utilisateurs et leurs permissions.",
+            "Assurer la sécurité des données.",
           ]}
         />
 
         <ProjectFeatures
           features={[
-            "Mini-jeux interactifs avec timer et score",
-            "Leaderboard pour comparer les performances",
-            "Responsive design pour tous les appareils",
-            "Animations CSS fluides pour feedback visuel",
-            "Validation de formulaire pour la soumission de score",
+            "Tableau de bord avec les statistiques de croissance.",
+            "Gestion des parcelles et des arbres.",
+            "Saisie des données de mesure.",
+            "Graphiques de croissance.",
+            "Export des données au format CSV.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "https://placehold.co/800x400?text=Preview+1",
-              alt: "Screenshot 1",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+2",
-              alt: "Screenshot 2",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/plottracking.png",
+              alt: "Tableau de bord de Plottracking",
             },
           ]}
         />
@@ -75,6 +68,5 @@ L’objectif était de créer une interface moderne, engageante et fun, qui gard
     </div>
   );
 };
-
 
 export default PlottrackingPage;

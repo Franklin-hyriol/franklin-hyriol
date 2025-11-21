@@ -4,70 +4,68 @@ import ProjectImg from "../../components/ProjectDetails/ProjectImg";
 import ProjectChallenges from "../../components/ProjectDetails/ProjectChallenges";
 import ProjectFeatures from "../../components/ProjectDetails/ProjectFeatures";
 import ProjectGalerie from "../../components/ProjectDetails/ProjectGalerie";
+import { useEffect } from "react";
 
 const PrayTogetherPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="main-container mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
-          title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides.  
-L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
-          live="https://www.eyechallenge.fun/"
-          github="https://github.com/ton-compte/eye-challenge"
+          title="Pray Together"
+          description="Pray Together est une application qui permet aux personnes de prier ensemble, où qu’elles soient. Elle offre un espace pour partager des intentions de prière et rejoindre des groupes de prière."
+          live="https://pray.up.railway.app/"
+          github="#"
         />
 
         <ProjectImg
-          url="https://www.eyechallenge.fun/"
-          img="/EyeChallenge/EyeChallenge-light.png"
-          alt="home page Eye Challenge https://www.eyechallenge.fun/"
+          url="https://pray.up.railway.app/"
+          img="/screenshot/PrayTogether-dark.png"
+          alt="Capture d'écran de l'application Pray Together"
         />
 
         <Projetctech
           text={
             <>
-              Hello <strong>React Typescript</strong>
+              L'application est construite avec <strong>Next.js</strong> pour le
+              frontend, un backend en <strong>Express.js</strong>, et une base
+              de données <strong>PostgreSQL</strong>. Le tout est déployé sur{" "}
+              <strong>Railway</strong>.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Création d’un design responsive inspiré de Figma",
-            "Gestion des scores en temps réel",
-            "Intégration de mini-jeux interactifs et animations fluides",
-            "Optimisation SEO et performance pour un chargement rapide",
-            "Gestion des erreurs et validation des formulaires avec Zod et React Hook Form",
+            "Mettre en place une authentification sécurisée des utilisateurs.",
+            "Créer une base de données relationnelle pour gérer les utilisateurs, les groupes et les intentions de prière.",
+            "Développer une API RESTful pour la communication entre le frontend et le backend.",
+            "Assurer la mise à jour en temps réel des intentions de prière.",
+            "Déployer l'application fullstack sur une plateforme cloud.",
           ]}
         />
 
         <ProjectFeatures
           features={[
-            "Mini-jeux interactifs avec timer et score",
-            "Leaderboard pour comparer les performances",
-            "Responsive design pour tous les appareils",
-            "Animations CSS fluides pour feedback visuel",
-            "Validation de formulaire pour la soumission de score",
+            "Création de compte et connexion.",
+            "Possibilité de créer et rejoindre des groupes de prière.",
+            "Ajout et consultation d'intentions de prière.",
+            "Interface simple et épurée.",
+            "Notifications pour les nouvelles intentions de prière.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "https://placehold.co/800x400?text=Preview+1",
-              alt: "Screenshot 1",
+              url: "/screenshot/PrayTogether-light.png",
+              alt: "Mode clair de l'application",
             },
             {
-              url: "https://placehold.co/800x400?text=Preview+2",
-              alt: "Screenshot 2",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
-            },
-            {
-              url: "https://placehold.co/800x400?text=Preview+3",
-              alt: "Screenshot 3",
+              url: "/screenshot/PrayTogether-dark.png",
+              alt: "Mode sombre de l'application",
             },
           ]}
         />
