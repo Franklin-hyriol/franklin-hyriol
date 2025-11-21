@@ -1,0 +1,83 @@
+[
+    {
+        "name": "PrayTogether",
+        "title": "Pray Together",
+        "description": "Pray Together est une application qui permet aux personnes de prier ensemble, où qu’elles soient.",
+        "image": "/screenshot/PrayTogether-light.png",
+        "alt": "Pray Together screenshot https://pray.up.railway.app/",
+        "type": "Fullstack Next/Express",
+        "url": "/project/pray-together"
+    },
+    {
+        "name": "EyeChallenge",
+        "title": "Eye Challenge",
+        "description": "Eye Challenge est une application en ligne pour tester vos capacités visuelles grâce à des mini-jeux amusants.",
+        "image": "/screenshot/EyeChallenge-light.png",
+        "alt": "Eye Challenge screenshot https://www.eyechallenge.fun/",
+        "type": "Fullstack Next",
+        "url": "/project/eye-challenge"
+    },
+    {
+        "name": "IntervalTimer",
+        "title": "Interval Timer",
+        "description": "Interval Timer est une application qui vous permet de créer des minuteurs avec intervalles.",
+        "image": "/screenshot/IntervalTimer-light.png",
+        "alt": "Interval Timer screenshot https://www.intervaltimer.fun/",
+        "type": "vanilla",
+        "url": "/project/interval-timer"
+    },
+    {
+        "name": "greengascar",
+        "title": "Greengascar",
+        "description": "Greengascar est une application qui vous permet de calculer votre empreinte carbone à travers de petites questions sur vos activités quotidiennes.",
+        "image": "/screenshot/greengascar.png",
+        "alt": "Greengascar screenshot https://greengascar.pulse.mg/",
+        "type": "Next",
+        "url": "/project/greengascar"
+    },
+    {
+        "name": "contact.ravinala",
+        "title": "Ravinala page contact",
+        "description": "C’est la page de contact du site Ravinalala Aéroport, où vous trouverez toutes les informations nécessaires pour les joindre et poser vos questions.",
+        "image": "/screenshot/contact.ravinala-light.png",
+        "alt": "contact.ravinala screenshot https://contact.ravinala-airports.aero/",
+        "type": "React",
+        "url": "/project/contact-ravinala"
+    },
+    {
+        "name": "plottracking",
+        "title": "Plottracking by Bondy",
+        "description": "Plottracking est une application utilisée par la compagnie Bondy pour suivre la croissance de leurs plantations d’arbres.",
+        "image": "/screenshot/plottracking.png",
+        "alt": "Plottracking screenshot https://plottracking.bondy.earth/",
+        "type": "React",
+        "url": "/project/plottracking"
+    },
+    {
+        "name": "verletJs",
+        "title": "verlet Js",
+        "description": "Verlet.js est une bibliothèque pour JavaScript et React, permettant de créer des simulations de mouvements basées sur l’algorithme de Verlet.",
+        "image": "/screenshot/verletjs.png",
+        "alt": "verlet screenshot #",
+        "type": "vanilla React",
+        "url": "/project/verlet-js"
+    },
+    {
+        "name": "solitaire",
+        "title": "Spider Solitaire Online",
+        "description": "Spider Solitaire Online est une version web du célèbre Spider Solitaire de Windows 7.",
+        "image": "/screenshot/solitaire.png",
+        "alt": "Spider Solitaire screenshot https://solimillion.netlify.app/",
+        "type": "React",
+        "url": "/project/solitaire"
+    },
+    {
+        "name": "nft-marketplace",
+        "title": "NFT Marketplace",
+        "description": "C’est une intégration HTML/CSS d’une maquette Figma. L’objectif était de réaliser le site avec un score de 100 % sur Lighthouse.",
+        "image": "/screenshot/nft-marketplace.png",
+        "alt": "NFT Marketplace screenshot https://franklin-hyriol.github.io/nft-marketplace/",
+        "type": "Integration",
+        "url": "/project/nft-marketplace"
+    }
+]
