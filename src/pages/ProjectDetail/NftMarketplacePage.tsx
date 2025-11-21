@@ -22,16 +22,17 @@ const NftMarketplacePage = () => {
 
         <ProjectImg
           url="https://franklin-hyriol.github.io/nft-marketplace/"
-          img="/screenshot/nft-marketplace.png"
+          img="/Marketplace/Marketplace.png"
           alt="Capture d'écran du NFT Marketplace"
         />
 
         <Projetctech
           text={
             <>
-              Le projet a été réalisé en <strong>HTML</strong> et{" "}
-              <strong>CSS</strong>, avec un peu de <strong>JavaScript</strong>{" "}
-              pour les interactions.
+              Le projet a été réalisé en <strong>HTML</strong>,{" "}
+              <strong>CSS/SCSS</strong>, en utilisant des librairies JavaScript
+              comme <strong>Slick</strong> pour le carrousel, ainsi que du code
+              maison pour rendre le header responsive.
             </>
           }
         />
@@ -42,7 +43,7 @@ const NftMarketplacePage = () => {
             "Créer un design responsive.",
             "Optimiser les images et les assets pour un chargement rapide.",
             "Écrire un code HTML sémantique et accessible.",
-            "Atteindre un score de 100 % sur Lighthouse.",
+            "Atteindre un score de 100 % sur Lighthouse et pageSpeed.",
           ]}
         />
 
@@ -50,7 +51,7 @@ const NftMarketplacePage = () => {
           features={[
             "Intégration pixel-perfect de la maquette.",
             "Design responsive.",
-            "Animations CSS.",
+            "Carrousel dynamique.",
             "Code optimisé pour les performances.",
             "Excellente accessibilité.",
           ]}
@@ -59,8 +60,28 @@ const NftMarketplacePage = () => {
         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/nft-marketplace.png",
-              alt: "Page d'accueil du NFT Marketplace",
+              url: "/Marketplace/screen_1.png",
+              alt: "Capture d'écran de l'application Marketplace",
+            },
+            {
+              url: "/Marketplace/screen_2.png",
+              alt: "Capture d'écran de l'application Marketplace",
+            },
+            {
+              url: "/Marketplace/screen_3.png",
+              alt: "Capture d'écran de l'application Marketplace",
+            },
+            {
+              url: "/Marketplace/screen_4.png",
+              alt: "Capture d'écran de l'application Marketplace",
+            },
+            {
+              url: "/Marketplace/screen_5.png",
+              alt: "Capture d'écran de l'application Marketplace",
+            },
+            {
+              url: "/Marketplace/screen_6.png",
+              alt: "Capture d'écran de l'application Marketplace",
             },
           ]}
         />

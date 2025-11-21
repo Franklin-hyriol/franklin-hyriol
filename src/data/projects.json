@@ -3,7 +3,7 @@
         "name": "PrayTogether",
         "title": "Pray Together",
         "description": "Pray Together est une application qui permet aux personnes de prier ensemble, où qu’elles soient.",
-        "image": "/screenshot/PrayTogether-dark.png",
+        "image": "/screenshot/PrayTogether-light.png",
         "alt": "Pray Together screenshot https://pray.up.railway.app/",
         "type": "Fullstack Next/Express",
         "url": "/project/pray-together"
@@ -12,7 +12,7 @@
         "name": "EyeChallenge",
         "title": "Eye Challenge",
         "description": "Eye Challenge est une application en ligne pour tester vos capacités visuelles grâce à des mini-jeux amusants.",
-        "image": "/screenshot/EyeChallenge-dark.png",
+        "image": "/screenshot/EyeChallenge-light.png",
         "alt": "Eye Challenge screenshot https://www.eyechallenge.fun/",
         "type": "Fullstack Next",
         "url": "/project/eye-challenge"
@@ -21,7 +21,7 @@
         "name": "IntervalTimer",
         "title": "Interval Timer",
         "description": "Interval Timer est une application qui vous permet de créer des minuteurs avec intervalles.",
-        "image": "/screenshot/IntervalTimer-dark.png",
+        "image": "/screenshot/IntervalTimer-light.png",
         "alt": "Interval Timer screenshot https://www.intervaltimer.fun/",
         "type": "vanilla",
         "url": "/project/interval-timer"

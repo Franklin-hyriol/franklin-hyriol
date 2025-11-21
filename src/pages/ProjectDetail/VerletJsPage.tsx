@@ -16,14 +16,14 @@ const VerletJsPage = () => {
         <ProjectHeader
           title="Verlet Js"
           description="Verlet.js est une bibliothèque JavaScript et React conçue pour simplifier la création de simulations physiques basées sur l'algorithme d'intégration de Verlet. Elle permet de simuler facilement des systèmes complexes comme des cordes, des tissus ou des particules interconnectées, avec une API simple et performante."
-          live="https://www.npmjs.com/package/verlet-js-react"
-          github="https://github.com/franklin-hyriol/verlet-js-react"
+          live="https://github.com/Franklin-hyriol/verletjs"
+          github="https://github.com/Franklin-hyriol/verletjs"
         />
 
         <ProjectImg
-          url="https://www.npmjs.com/package/verlet-js-react"
-          img="/screenshot/verletjs.png"
-          alt="Exemple de simulation avec Verlet.js"
+          url="https://www.npmjs.com/package/verlet-engine"
+          img="/Verlet/Verlet.png"
+          alt="A JavaScript/TypeScript library for 2D Verlet physics simulations."
         />
 
         <Projetctech
@@ -60,20 +60,28 @@ const VerletJsPage = () => {
         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/verletjs.png",
-              alt: "Simulation de corde",
+              url: "/Verlet/screen_0.png",
+              alt: "Capture d'écran de l'application Verlet",
             },
             {
-              url: "/screenshot/verletjs.png",
-              alt: "Simulation de tissu",
+              url: "/Verlet/screen_1.png",
+              alt: "Capture d'écran de l'application Verlet",
             },
             {
-              url: "/screenshot/verletjs.png",
-              alt: "Exemple d'intégration",
+              url: "/Verlet/screen_2.png",
+              alt: "Capture d'écran de l'application Verlet",
             },
             {
-              url: "/screenshot/verletjs.png",
-              alt: "Documentation",
+              url: "/Verlet/screen_3.png",
+              alt: "Capture d'écran de l'application Verlet",
+            },
+            {
+              url: "/Verlet/screen_4.png",
+              alt: "Capture d'écran de l'application Verlet",
+            },
+            {
+              url: "/Verlet/screen_5.png",
+              alt: "Capture d'écran de l'application Verlet",
             },
           ]}
         />

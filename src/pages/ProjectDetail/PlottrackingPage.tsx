@@ -15,52 +15,88 @@ const PlottrackingPage = () => {
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
           title="Plottracking by Bondy"
-          description="Plottracking est une application utilisée par la compagnie Bondy pour suivre la croissance de leurs plantations d’arbres."
+          description="Plottracking est une application utilisée par la compagnie Bondy pour suivre la croissance de leurs plantations d’arbres. Le site est protégé par un token que seule la compagnie Bondi peut partager pour y accéder."
           live="https://plottracking.bondy.earth/"
-          github="#"
+          github=""
         />
 
         <ProjectImg
           url="https://plottracking.bondy.earth/"
-          img="/screenshot/plottracking.png"
+          img="/Plottracking/Plottracking.png"
           alt="Capture d'écran de l'application Plottracking"
         />
 
         <Projetctech
           text={
             <>
-              L'application a été développée en <strong>React</strong> avec{" "}
-              <strong>TypeScript</strong>, en utilisant{" "}
-              <strong>Tailwind CSS</strong> pour le style.
+              Le backend a été développé en PHP avec <strong>Symfony</strong>{" "}
+              par l’équipe backend, tandis que j’ai pris en charge le
+              développement du frontend en <strong>React</strong>.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Mettre en place un système de suivi des parcelles de plantation.",
-            "Permettre l'ajout et la modification des données de croissance des arbres.",
-            "Visualiser les données sous forme de graphiques et de tableaux.",
-            "Gérer les utilisateurs et leurs permissions.",
-            "Assurer la sécurité des données.",
+            "Ajout d’une protection avec JWT sans authentification côté client.",
+            "Animation de la carte pour fluidifier la navigation.",
+            "Mise à jour en temps réel des données côté frontend dès que la base de données change.",
+            "Mise à jour de la carte ou de la sidebar en fonction des interactions de l’utilisateur.",
+            "Visualisation 3D et vue “drone” des parcelles.",
           ]}
         />
 
         <ProjectFeatures
           features={[
             "Tableau de bord avec les statistiques de croissance.",
-            "Gestion des parcelles et des arbres.",
-            "Saisie des données de mesure.",
-            "Graphiques de croissance.",
-            "Export des données au format CSV.",
+            "Visualisation des arbres avec leurs coordonnées.",
+            "Accessible sur mobile et desktop.",
+            "Animations douces et fluides pour une meilleure expérience visuelle.",
+            "Site multilingue avec traduction via l’API Google Translate.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/plottracking.png",
-              alt: "Tableau de bord de Plottracking",
+              url: "/Plottracking/screen_0.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_1.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_2.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_3.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_4.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_5.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_6.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_7.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_8.png",
+              alt: "Capture d'écran de l'application Plottracking",
+            },
+            {
+              url: "/Plottracking/screen_9.png",
+              alt: "Capture d'écran de l'application Plottracking",
             },
           ]}
         />

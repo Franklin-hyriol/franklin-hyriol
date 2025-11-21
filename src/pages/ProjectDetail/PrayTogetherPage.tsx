@@ -85,6 +85,14 @@ const PrayTogetherPage = () => {
               url: "/PrayTogether/screen_6.jpg",
               alt: "Capture d'écran de l'application Pray Together",
             },
+            {
+              url: "/PrayTogether/screen_7.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
+            },
+            {
+              url: "/PrayTogether/screen_8.jpg",
+              alt: "Capture d'écran de l'application Pray Together",
+            },
           ]}
         />
       </div>

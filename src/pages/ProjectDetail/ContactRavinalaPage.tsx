@@ -17,21 +17,22 @@ const ContactRavinalaPage = () => {
           title="Ravinala page contact"
           description="C’est la page de contact du site Ravinalala Aéroport, où vous trouverez toutes les informations nécessaires pour les joindre et poser vos questions."
           live="https://contact.ravinala-airports.aero/"
-          github="#"
+          github=""
         />
 
         <ProjectImg
           url="https://contact.ravinala-airports.aero/"
-          img="/screenshot/contact.ravinala-light.png"
+          img="/Ravinala/Ravinala.png"
           alt="Capture d'écran de la page contact de Ravinala"
         />
 
         <Projetctech
           text={
             <>
-              La page a été développée en <strong>React</strong> avec{" "}
-              <strong>TypeScript</strong>, en utilisant{" "}
-              <strong>Tailwind CSS</strong> pour le style.
+              Le site Ravinala lui-même a été développé avec <strong>WordPress</strong> et
+              <strong>Elementor</strong>, mais vu la complexité des interactions requises sur la
+              page de contact, j’ai été intégré au projet pour développer cette
+              partie en <strong>React</strong>.
             </>
           }
         />
@@ -39,28 +40,47 @@ const ContactRavinalaPage = () => {
         <ProjectChallenges
           challenges={[
             "Créer un formulaire de contact clair et facile à utiliser.",
-            "Intégrer une carte interactive pour localiser l'aéroport.",
+            "Utiliser la traduction dans le backend pour les textes affichés.",
             "Assurer la validation des champs du formulaire.",
-            "Mettre en place un système d'envoi d'email.",
-            "Rendre la page accessible aux personnes en situation de handicap.",
+            "Mettre en place un système d'envoi du formulaire.",
+            "Rendre la page accessible et responsive.",
           ]}
         />
 
         <ProjectFeatures
           features={[
             "Formulaire de contact.",
-            "Carte interactive.",
-            "Informations de contact.",
-            "FAQ.",
+            "Site multi-langue.",
+            "Validation des champs en temps réel.",
             "Design responsive.",
           ]}
         />
 
-        <ProjectGalerie
+         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/contact.ravinala-light.png",
-              alt: "Page contact de Ravinala",
+              url: "/Ravinala/screen_1.png",
+              alt: "Capture d'écran de l'application Ravinala",
+            },
+            {
+              url: "/Ravinala/screen_2.png",
+              alt: "Capture d'écran de l'application Ravinala",
+            },
+            {
+              url: "/Ravinala/screen_3.png",
+              alt: "Capture d'écran de l'application Ravinala",
+            },
+            {
+              url: "/Ravinala/screen_4.png",
+              alt: "Capture d'écran de l'application Ravinala",
+            },
+            {
+              url: "/Ravinala/screen_5.png",
+              alt: "Capture d'écran de l'application Ravinala",
+            },
+            {
+              url: "/Ravinala/screen_6.png",
+              alt: "Capture d'écran de l'application Ravinala",
             },
           ]}
         />

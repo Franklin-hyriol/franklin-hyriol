@@ -15,30 +15,29 @@ const GreengascarPage = () => {
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
           title="Greengascar"
-          description="Greengascar est une application qui vous permet de calculer votre empreinte carbone à travers de petites questions sur vos activités quotidiennes."
+          description="Greengascar est une application qui vous permet de calculer votre empreinte carbone à travers de petites questions sur vos activités quotidiennes. Le code source est detenu par Pulse et Bondy."
           live="https://greengascar.pulse.mg/"
-          github="#"
+          github=""
         />
 
         <ProjectImg
           url="https://greengascar.pulse.mg/"
-          img="/screenshot/greengascar.png"
+          img="/Greengascar/greengascar.png"
           alt="Capture d'écran de l'application Greengascar"
         />
 
         <Projetctech
           text={
             <>
-              Greengascar a été développé avec <strong>Next.js</strong> et{" "}
-              <strong>TypeScript</strong>, en utilisant{" "}
-              <strong>Tailwind CSS</strong> pour le style.
+              Greengascar a été développé avec <strong>Next.js</strong> pour le frontend et
+              <strong>WordPress Headless</strong> pour le backend.
             </>
           }
         />
 
         <ProjectChallenges
           challenges={[
-            "Créer un questionnaire intuitif et engageant.",
+            "Créer un questionnaire multipage, intuitif et engageant.",
             "Calculer l'empreinte carbone de manière précise.",
             "Présenter les résultats de manière claire et compréhensible.",
             "Sensibiliser les utilisateurs à l'impact de leurs actions.",
@@ -59,8 +58,28 @@ const GreengascarPage = () => {
         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/greengascar.png",
-              alt: "Page d'accueil de Greengascar",
+              url: "/Greengascar/screen_1.png",
+              alt: "Capture d'écran de l'application Greengascar",
+            },
+            {
+              url: "/Greengascar/screen_2.png",
+              alt: "Capture d'écran de l'application Greengascar",
+            },
+            {
+              url: "/Greengascar/screen_3.png",
+              alt: "Capture d'écran de l'application Greengascar",
+            },
+            {
+              url: "/Greengascar/screen_4.png",
+              alt: "Capture d'écran de l'application Greengascar",
+            },
+            {
+              url: "/Greengascar/screen_5.png",
+              alt: "Capture d'écran de l'application Greengascar",
+            },
+            {
+              url: "/Greengascar/screen_6.png",
+              alt: "Capture d'écran de l'application Greengascar",
             },
           ]}
         />

@@ -15,24 +15,24 @@ const EyeChallengePage = () => {
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ProjectHeader
           title="Eye Challenge"
-          description="Eye Challenge est une application web ludique conçue pour tester vos réflexes et votre capacité à résoudre des mini-jeux rapides. L’objectif était de créer une interface moderne, engageante et fun, qui garde les utilisateurs motivés à jouer et progresser."
+          description="Eye Challenge est une collection de mini-jeux qui permet de tester la capacité de vos yeux, vos réflexes et votre mémoire visuelle à travers des défis courts, fun et captivants."
           live="https://www.eyechallenge.fun/"
-          github="https://github.com/franklin-hyriol/eye-challenge"
+          github="https://github.com/Franklin-hyriol/EyeChallenge"
         />
 
         <ProjectImg
           url="https://www.eyechallenge.fun/"
-          img="/screenshot/EyeChallenge-dark.png"
+          img="/EyeChallenge/EyeChallenge-dark.png"
           alt="home page Eye Challenge https://www.eyechallenge.fun/"
         />
 
         <Projetctech
           text={
             <>
-              Le projet a été développé avec <strong>Next.js</strong> pour un
-              rendu côté serveur et une performance optimale. Le style est géré
-              avec <strong>Tailwind CSS</strong>, et le tout est écrit en{" "}
-              <strong>TypeScript</strong> pour un code plus sûr et maintenable.
+              Ce projet est réalisé en fullstack avec <strong>Next.js</strong>,
+              car l’importance d’avoir un site facilement{" "}
+              <strong>crawlable</strong> et <strong>indexable</strong> par
+              Google était ma priorité pour attirer du trafic.
             </>
           }
         />
@@ -42,7 +42,7 @@ const EyeChallengePage = () => {
             "Création d’un design responsive et attrayant inspiré de Figma.",
             "Gestion des scores en temps réel et sauvegarde dans le localStorage.",
             "Intégration de plusieurs mini-jeux interactifs avec des animations fluides en CSS.",
-            "Optimisation du SEO et des performances pour un chargement rapide avec Vercel.",
+            "Optimisation du SEO et des performances pour un chargement rapide.",
             "Mise en place d'un système de partage des scores sur les réseaux sociaux.",
           ]}
         />
@@ -53,19 +53,35 @@ const EyeChallengePage = () => {
             "Un classement local pour suivre ses propres progrès.",
             "Un design responsive qui s'adapte à tous les écrans, du mobile au bureau.",
             "Des animations CSS légères pour un feedback visuel instantané.",
-            "Aucune inscription requise, jouez instantanément.",
+            "Ajout de retour sonore pour une immersion plus immersive.",
           ]}
         />
 
         <ProjectGalerie
           images={[
             {
-              url: "/EyeChallenge/EyeChallenge-light.png",
-              alt: "Screenshot du jeu en mode clair",
+              url: "/EyeChallenge/screen_1.png",
+              alt: "Capture d'écran de l'application Eye Challenge",
             },
             {
-              url: "/EyeChallenge/EyeChallenge-dark.png",
-              alt: "Screenshot du jeu en mode sombre",
+              url: "/EyeChallenge/screen_2.png",
+              alt: "Capture d'écran de l'application Eye Challenge",
+            },
+            {
+              url: "/EyeChallenge/screen_3.png",
+              alt: "Capture d'écran de l'application Eye Challenge",
+            },
+            {
+              url: "/EyeChallenge/screen_4.png",
+              alt: "Capture d'écran de l'application Eye Challenge",
+            },
+            {
+              url: "/EyeChallenge/screen_5.png",
+              alt: "Capture d'écran de l'application Eye Challenge",
+            },
+            {
+              url: "/EyeChallenge/screen_6.png",
+              alt: "Capture d'écran de l'application Eye Challenge",
             },
           ]}
         />

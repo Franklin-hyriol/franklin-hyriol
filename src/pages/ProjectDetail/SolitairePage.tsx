@@ -17,12 +17,12 @@ const SolitairePage = () => {
           title="Spider Solitaire Online"
           description="Spider Solitaire Online est une version web du célèbre Spider Solitaire de Windows 7."
           live="https://solimillion.netlify.app/"
-          github="https://github.com/franklin-hyriol/solitaire"
+          github="https://github.com/Franklin-hyriol/spider-solitaire-react"
         />
 
         <ProjectImg
           url="https://solimillion.netlify.app/"
-          img="/screenshot/solitaire.png"
+          img="/Solitaire/Solitaire.png"
           alt="Capture d'écran du jeu Spider Solitaire"
         />
 
@@ -53,14 +53,35 @@ const SolitairePage = () => {
             "Annulation des mouvements.",
             "Statistiques de jeu.",
             "Design responsive.",
+            "Aide en cas de bloquage.",
           ]}
         />
 
-        <ProjectGalerie
+         <ProjectGalerie
           images={[
             {
-              url: "/screenshot/solitaire.png",
-              alt: "Partie de Spider Solitaire en cours",
+              url: "/Solitaire/screen_0.png",
+              alt: "Capture d'écran de l'application Solitaire",
+            },
+            {
+              url: "/Solitaire/screen_1.png",
+              alt: "Capture d'écran de l'application Solitaire",
+            },
+            {
+              url: "/Solitaire/screen_2.png",
+              alt: "Capture d'écran de l'application Solitaire",
+            },
+            {
+              url: "/Solitaire/screen_3.png",
+              alt: "Capture d'écran de l'application Solitaire",
+            },
+            {
+              url: "/Solitaire/screen_4.png",
+              alt: "Capture d'écran de l'application Solitaire",
+            },
+            {
+              url: "/Solitaire/screen_5.png",
+              alt: "Capture d'écran de l'application Solitaire",
             },
           ]}
         />
