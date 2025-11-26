@@ -22,7 +22,7 @@ function App() {
   useEffect(() => {
     const lenisInstance = new Lenis({
       duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       direction: "vertical",
       gestureDirection: "vertical",
       smoothWheel: true,
@@ -30,7 +30,7 @@ function App() {
       smoothTouch: false,
       touchMultiplier: 2,
       infinite: false,
-    });
+    } as any);
 
     setLenis(lenisInstance);
 
@@ -54,10 +54,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project/pray-together" element={<PrayTogetherPage />} />
         <Route path="/project/eye-challenge" element={<EyeChallengePage />} />
-        <Route
-          path="/project/interval-timer"
-          element={<IntervalTimerPage />}
-        />
+        <Route path="/project/interval-timer" element={<IntervalTimerPage />} />
         <Route path="/project/greengascar" element={<GreengascarPage />} />
         <Route
           path="/project/contact-ravinala"

@@ -12,7 +12,7 @@ const VerletJsPage = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="main-container mt-20">
+    <div className="main-container mt-10 lg:mt-20">
       <div className="w-[80%] mx-auto flex flex-col gap-20">
         <ScrollReveal>
           <ProjectHeader

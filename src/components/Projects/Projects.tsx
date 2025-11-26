@@ -20,7 +20,7 @@ function Projects() {
   }, [activeFilter]);
 
   return (
-    <section id="projects" className="pt-20 pb-20">
+    <section id="projects" className="pt-15 pb-5 md:pt-10 md:pb-10">
       <div className="main-container">
         <h2 className="text-center text-3xl md:text-4xl font-semibold mb-10">
           Mes Projets

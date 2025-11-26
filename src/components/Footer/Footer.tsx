@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -12,20 +12,28 @@ function Footer() {
       <nav>
         <div className="grid grid-flow-col gap-4">
           <a
-            href="https://www.facebook.com/lobo.rakotomanana"
+            className="p-2"
+            href="https://mg.linkedin.com/in/franklin-hyriol-razafinandrasana-4b9a71217"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary text-2xl"
           >
-            <FaFacebookF />
+            <FaLinkedin className="text-3xl" />
           </a>
           <a
-            href="https://www.instagram.com/honey_honey2200/"
+            className="p-2"
+            href="https://www.facebook.com/franklin.hyriol/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary text-2xl"
           >
-            <FaInstagram />
+            <FaFacebookF className="text-3xl" />
+          </a>
+          <a
+            className="p-2"
+            href="https://github.com/Franklin-hyriol"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="text-3xl" />
           </a>
         </div>
       </nav>

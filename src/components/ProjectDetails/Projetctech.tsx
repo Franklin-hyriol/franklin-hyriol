@@ -6,7 +6,7 @@ interface ProjetctechProps {
 
 function Projetctech({ text }: ProjetctechProps) {
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="w-full lg:w-[80%] mx-auto">
       <h2 className="text-center text-4xl font-semibold mb-10">Technologies</h2>
 
       <div className="text-center">{text}</div>

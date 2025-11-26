@@ -7,6 +7,8 @@ interface ScrollRevealProps {
   duration?: number;
   from?: "left" | "right" | "bottom";
   initialOffset?: number;
+  classParent?: string;
+  classChild?: string;
 }
 
 function ScrollReveal({
@@ -15,6 +17,8 @@ function ScrollReveal({
   duration = 0.5,
   from = "bottom",
   initialOffset = 50,
+ classParent,
+ classChild
 }: ScrollRevealProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -40,12 +44,13 @@ function ScrollReveal({
   };
 
   return (
-    <div ref={ref} style={{ position: "relative", overflow: "hidden" }}>
+    <div className={classParent} ref={ref} style={{ position: "relative", overflow: "hidden" }}>
       <motion.div
         variants={variants}
         initial="hidden"
         animate={mainControls}
         transition={{ duration, delay }}
+        className={classChild}
       >
         {children}
       </motion.div>

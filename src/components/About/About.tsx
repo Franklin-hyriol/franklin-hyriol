@@ -2,13 +2,13 @@ import ScrollReveal from "../ScrollReveal/ScrollReveal";
 
 function About() {
   return (
-    <section id="about" className="pt-20 pb-20">
+    <section id="about" className="pt-15 pb-5 md:pt-10 md:pb-10">
       <div className="main-container">
         <h2 className="text-center text-4xl font-semibold mb-10">
           A propos de moi
         </h2>
 
-        <div className="text-lg text-center w-[80%] mx-auto flex flex-col gap-5 mb-20">
+        <div className="text-lg text-center w-full lg:w-[80%] mx-auto flex flex-col gap-5 mb-10 lg:mb-20">
           <p>
             Vous savez quoi ? J’ai envie de dire : vous n’avez qu’à chercher
             <strong> Franklin Hyriol</strong> sur{" "}
@@ -33,7 +33,7 @@ function About() {
           </p>
         </div>
 
-        <div className="mb-20">
+        <div className="mb-10 lg:mb-20">
           <h3 className="text-center text-2xl font-semibold mb-10">
             Experiences
           </h3>
@@ -199,7 +199,7 @@ function About() {
             Parcours scolaire
           </h3>
 
-          <div className="flex flex-col gap-4 text-center w-[80%] justify-center mx-auto">
+          <div className="flex flex-col gap-4 text-center w-full lg:w-[80%] justify-center mx-auto">
             <p>
               Mon parcours scolaire a été, disons, <strong>sinueux</strong>,
               mais chaque étape m’a construit. Après mon{" "}

@@ -2,13 +2,13 @@ import ScrollReveal from "../ScrollReveal/ScrollReveal";
 
 function Skills() {
   return (
-    <section id="skills" className="pt-20 pb-20">
+    <section id="skills" className="pt-15 pb-5 md:pt-10 md:pb-10">
       <div className="main-container">
         <h2 className="text-center text-4xl font-semibold mb-10">
           Mes Compétences
         </h2>
 
-        <div className="text-lg text-center w-[80%] mx-auto flex flex-col gap-5 mb-20">
+        <div className="text-lg text-center w-full lg:w-[80%] mx-auto flex flex-col gap-5 mb-10 lg:mb-20">
           <p>
             Dans cette section, je vous présente un aperçu de mes{" "}
             <strong>compétences techniques (hard skills)</strong> et de mes{" "}
@@ -22,7 +22,7 @@ function Skills() {
 
         <div className="flex flex-col md:flex-row gap-10 md:gap-20 justify-center">
           <ScrollReveal from="left">
-            <div className="mb-20 flex flex-col items-center">
+            <div className="lg:mb-20 flex flex-col items-center">
               <h3 className="text-center text-2xl font-semibold mb-10">
                 soft skills
               </h3>
