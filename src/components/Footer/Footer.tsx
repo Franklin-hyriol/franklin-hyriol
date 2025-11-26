@@ -1,12 +1,13 @@
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer className="footer footer-horizontal footer-center text-base-content rounded pt-10 pb-5">
       <div>
-        <a className="text-2xl font-bold font-dancing-script" href="/">
+        <Link className="text-2xl font-bold font-dancing-script" to="/">
           Franklin Hyriol
-        </a>
+        </Link>
       </div>
       <nav>
         <div className="grid grid-flow-col gap-4">

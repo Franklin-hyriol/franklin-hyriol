@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
+import { useLenis } from "../../context/LenisContext";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const lenis = useLenis();
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -23,30 +28,55 @@ function Navbar() {
     setIsMenuOpen(false);
   };
 
+  const handleNavClick = (e: React.MouseEvent, path: string) => {
+    e.preventDefault();
+    const hash = path.substring(path.indexOf("#"));
+
+    if (location.pathname !== "/") {
+      navigate("/");
+    }
+
+    setTimeout(() => {
+      if (lenis) {
+        lenis.scrollTo(hash, { offset: -80 }); // Offset for the sticky navbar
+      } else {
+        // Fallback for when lenis is not available
+        const targetElement = document.querySelector(hash);
+        if (targetElement) {
+          const y = targetElement.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }
+    }, 100); // Delay to allow page transition
+
+    closeMenu();
+  };
+
+
   const navLinks = (
     <>
       <li>
-        <a className="hover:text-primary hover:underline" href="/#home" onClick={closeMenu}>
+        <a className="hover:text-primary hover:underline" href="/#home" onClick={(e) => handleNavClick(e, "/#home")}>
           Accueil
         </a>
       </li>
       <li>
-        <a className="hover:text-primary hover:underline" href="/#projects" onClick={closeMenu}>
+        <a className="hover:text-primary hover:underline" href="/#projects" onClick={(e) => handleNavClick(e, "/#projects")}>
           Projets
         </a>
       </li>
       <li>
-        <a className="hover:text-primary hover:underline" href="/#about" onClick={closeMenu}>
+        <a className="hover:text-primary hover:underline" href="/#about" onClick={(e) => handleNavClick(e, "/#about")}>
           À propos
         </a>
       </li>
       <li>
-        <a className="hover:text-primary hover:underline" href="/#skills" onClick={closeMenu}>
+        <a className="hover:text-primary hover:underline" href="/#skills" onClick={(e) => handleNavClick(e, "/#skills")}>
           Compétences
         </a>
       </li>
       <li>
-        <a className="hover:text-primary hover:underline" href="/#contact" onClick={closeMenu}>
+        <a className="hover:text-primary hover:underline" href="/#contact" onClick={(e) => handleNavClick(e, "/#contact")}>
           Contact
         </a>
       </li>
@@ -58,9 +88,9 @@ function Navbar() {
       <header className="bg-base-100 shadow-sm sticky top-0 z-50">
         <div className="navbar main-container">
           <div className="navbar-start">
-            <a className="text-2xl font-bold font-dancing-script hover:text-primary" href="/">
+            <Link className="text-2xl font-bold font-dancing-script hover:text-primary" to="/">
               Franklin Hyriol
-            </a>
+            </Link>
           </div>
 
           <nav className="navbar-center hidden md:flex">

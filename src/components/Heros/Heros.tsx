@@ -3,6 +3,14 @@ import ScrollReveal from "../ScrollReveal/ScrollReveal";
 import HeroImage from "./franklin.jpeg";
 
 function Heros() {
+
+  const handleScrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="home" className="main-container min-h-screen pt-16 pb-8 md:min-h-[calc(100vh-64px)] md:py-0 flex items-center">
       <div className="flex flex-col-reverse md:flex-row md:justify-between items-center gap-10 md:gap-20 w-full">
@@ -28,10 +36,12 @@ function Heros() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <button className="btn btn-sm sm:btn-lg">
-                Télécharger mon CV <FaFileDownload />
-              </button>
-              <button className="btn btn-primary btn-sm sm:btn-lg">
+              <a href="/Franklin-Hyriol-CV.pdf" download>
+                <button className="btn btn-sm sm:btn-lg">
+                  Télécharger mon CV <FaFileDownload />
+                </button>
+              </a>
+              <button onClick={handleScrollToProjects} className="btn btn-primary btn-sm sm:btn-lg">
                 Voir mes projets <FaArrowDown />
               </button>
             </div>
