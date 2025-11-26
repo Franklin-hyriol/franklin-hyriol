@@ -1,20 +1,35 @@
 import { FaArrowDown, FaFileDownload } from "react-icons/fa";
+import ScrollReveal from "../ScrollReveal/ScrollReveal";
 import HeroImage from "./franklin.jpeg";
 
 function Heros() {
+  const handleScrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <section id="home" className="main-container h-[calc(100vh-64px)]">
-      <div className="flex justify-between gap-10 items-center  h-[calc(85vh-64px)]">
-        <div className="basis-[50%] flex flex-col gap-10">
+    <section
+      id="home"
+      className="main-container min-h-screen pt-5 sm:pt-16 pb-8 md:min-h-[calc(100vh-64px)] md:py-0 flex items-center"
+    >
+      <div className="flex flex-col-reverse md:flex-row md:justify-between gap-4 md:gap-10 lg:gap-15 xl:gap-20  w-full md:mt-10 xl:-mt-30">
+        <ScrollReveal
+          from="left"
+          classParent="w-full md:basis-[50%]"
+          classChild="flex flex-col gap-5 md:gap-10 text-center md:text-left"
+        >
           <div className="flex flex-col gap-5">
-            <span className="text-2xl">
+            <span className="text-xl md:text-2xl">
               Bonjour
               <span className="inline-block animate-wave ml-1">👋</span>
             </span>
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
               Franklin Hyriol — Développeur Fullstack
             </h1>
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               Passionné par l’informatique, j’ai passé mes nuits à apprendre
               tout ce qui me tombait sous les yeux, à tester, casser et
               reconstruire des trucs juste pour comprendre comment ça marchait.
@@ -25,25 +40,35 @@ function Heros() {
             </p>
           </div>
 
-          <div className="flex gap-4">
-            <button className="btn btn-lg">
-              Télécharger mon CV <FaFileDownload />
-            </button>
-            <button className="btn btn-primary btn-lg">
+          <div className="flex flex-col flex-wrap sm:flex-row gap-4 justify-center md:justify-start items-center">
+            <a href="/Franklin_Hyriol_RAZAFINANDRASANA_CV.pdf" download>
+              <button className="btn btn-lg w-fit">
+                Télécharger mon CV <FaFileDownload />
+              </button>
+            </a>
+            <button
+              onClick={handleScrollToProjects}
+              className="btn btn-primary btn-lg w-fit"
+            >
               Voir mes projets <FaArrowDown />
             </button>
           </div>
-        </div>
+        </ScrollReveal>
 
-        <div className="basis-[50%]">
-          <picture className="w-full block">
+        <ScrollReveal
+          from="right"
+          delay={0.5}
+          classParent="w-full h-[424px] md:basis-[50%] flex justify-center"
+          classChild="w-full h-full flex justify-center"
+        >
+          <picture className="w-full md:w-full h-full block">
             <img
-              className="mask mask-hexagon-2"
+              className="mask mask-squircle w-full h-full object-cover object-top"
               src={HeroImage}
               alt="Franklin Hyriol"
             />
           </picture>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

@@ -3,19 +3,28 @@ import Contact from "../components/Contact/Contact";
 import Heros from "../components/Heros/Heros";
 import Projects from "../components/Projects/Projects";
 import Skills from "../components/Skills/Skills";
+import ScrollReveal from "../components/ScrollReveal/ScrollReveal";
 
 function Home() {
   return (
     <>
       <Heros />
 
-      <Projects />
+      <ScrollReveal>
+        <Projects />
+      </ScrollReveal>
 
-      <About />
+      <ScrollReveal>
+        <About />
+      </ScrollReveal>
 
-      <Skills />
+      <ScrollReveal>
+        <Skills />
+      </ScrollReveal>
 
-      <Contact />
+      <ScrollReveal>
+        <Contact />
+      </ScrollReveal>
     </>
   );
 }

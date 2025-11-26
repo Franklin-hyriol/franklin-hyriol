@@ -1,12 +1,14 @@
+import ScrollReveal from "../ScrollReveal/ScrollReveal";
+
 function About() {
   return (
-    <section id="about" className="pt-20 pb-20">
+    <section id="about" className="pt-15 pb-5 md:pt-10 md:pb-10">
       <div className="main-container">
         <h2 className="text-center text-4xl font-semibold mb-10">
           A propos de moi
         </h2>
 
-        <div className="text-lg text-center w-[80%] mx-auto flex flex-col gap-5 mb-20">
+        <div className="text-lg text-center w-full lg:w-[80%] mx-auto flex flex-col gap-5 mb-10 lg:mb-20">
           <p>
             Vous savez quoi ? J’ai envie de dire : vous n’avez qu’à chercher
             <strong> Franklin Hyriol</strong> sur{" "}
@@ -31,7 +33,7 @@ function About() {
           </p>
         </div>
 
-        <div className="mb-20">
+        <div className="mb-10 lg:mb-20">
           <h3 className="text-center text-2xl font-semibold mb-10">
             Experiences
           </h3>
@@ -53,42 +55,44 @@ function About() {
                 </svg>
               </div>
               <div className="timeline-start mb-10 md:text-end">
-                <time className="font-mono italic">Oct 2020 - Oct 2022</time>
-                <div className="text-lg font-black">
-                  Knowledge Analyst |{" "}
-                  <a
-                    href="https://www.pulse.mg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#e53520]"
-                  >
-                    Pulse
-                  </a>
-                </div>
-                <p>
-                  <strong>Knowledge Analyst</strong> a été mon premier poste
-                  après mes études, au sein de{" "}
-                  <a
-                    target="_blank"
-                    className="link link-primary"
-                    rel="noopener noreferrer"
-                    href="https://sayna.io/"
-                  >
-                    Sayna
-                  </a>
-                  . Dans le cadre du projet Pulse, dont l’objectif était de{" "}
-                  <strong>centraliser</strong> l’ensemble des connaissances
-                  produites sur une plateforme unique appelée{" "}
-                  <strong>Knowledge Base</strong> (KB), j’étais en charge de :
-                </p>
-                <ul className="list-disc list-inside">
-                  <li>qualifier et structurer les contenus,</li>
-                  <li>administrer et maintenir la plateforme,</li>
-                  <li>
-                    alimenter et mettre à jour la base de données de
-                    connaissances.
-                  </li>
-                </ul>
+                <ScrollReveal from="left">
+                  <time className="font-mono italic">Oct 2020 - Oct 2022</time>
+                  <div className="text-lg font-black">
+                    Knowledge Analyst |{" "}
+                    <a
+                      href="https://www.pulse.mg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#e53520]"
+                    >
+                      Pulse
+                    </a>
+                  </div>
+                  <p>
+                    <strong>Knowledge Analyst</strong> a été mon premier poste
+                    après mes études, au sein de{" "}
+                    <a
+                      target="_blank"
+                      className="link link-primary"
+                      rel="noopener noreferrer"
+                      href="https://sayna.io/"
+                    >
+                      Sayna
+                    </a>
+                    . Dans le cadre du projet Pulse, dont l’objectif était de{" "}
+                    <strong>centraliser</strong> l’ensemble des connaissances
+                    produites sur une plateforme unique appelée{" "}
+                    <strong>Knowledge Base</strong> (KB), j’étais en charge de :
+                  </p>
+                  <ul className="list-disc list-inside">
+                    <li>qualifier et structurer les contenus,</li>
+                    <li>administrer et maintenir la plateforme,</li>
+                    <li>
+                      alimenter et mettre à jour la base de données de
+                      connaissances.
+                    </li>
+                  </ul>
+                </ScrollReveal>
               </div>
               <hr />
             </li>
@@ -111,27 +115,31 @@ function About() {
                 </svg>
               </div>
               <div className="timeline-end md:mb-10">
-                <time className="font-mono italic">Oct 2022 - Nos jours</time>
-                <div className="text-lg font-black">
-                  Intégrateur / Développeur Front-End |{" "}
-                  <a
-                    href="https://www.pulse.mg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#e53520]"
-                  >
-                    Pulse
-                  </a>
-                </div>
-                <p>
-                  Toujours au sein de Pulse, après la finalisation du projet
-                  Knowledge Base, j’ai évolué vers un poste{" "}
-                  <strong>d’intégrateur WordPress / Elementor.</strong>{" "}
-                  Parallèlement, mes compétences en
-                  <strong> développement front-end</strong>, notamment en React,
-                  m’ont permis d’intervenir sur plusieurs projets en React.js et
-                  de collaborer étroitement avec l’équipe DevOps.
-                </p>
+                <ScrollReveal from="right" delay={0.5}>
+                  <time className="font-mono italic">
+                    Oct 2022 - Nos jours
+                  </time>
+                  <div className="text-lg font-black">
+                    Intégrateur / Développeur Front-End |{" "}
+                    <a
+                      href="https://www.pulse.mg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#e53520]"
+                    >
+                      Pulse
+                    </a>
+                  </div>
+                  <p>
+                    Toujours au sein de Pulse, après la finalisation du projet
+                    Knowledge Base, j’ai évolué vers un poste{" "}
+                    <strong>d’intégrateur WordPress / Elementor.</strong>{" "}
+                    Parallèlement, mes compétences en
+                    <strong> développement front-end</strong>, notamment en
+                    React, m’ont permis d’intervenir sur plusieurs projets en
+                    React.js et de collaborer étroitement avec l’équipe DevOps.
+                  </p>
+                </ScrollReveal>
               </div>
               <hr />
             </li>
@@ -154,30 +162,32 @@ function About() {
                 </svg>
               </div>
               <div className="timeline-start mb-10 md:text-end">
-                <time className="font-mono italic">futur</time>
-                <div className="text-lg font-black">
-                  Developpeur Fullstack (MERN)
-                </div>
-                <p className="mb-4">
-                  Je n’ai pas encore occupé officiellement un poste de
-                  <strong> développeur fullstack</strong> en entreprise, mais
-                  j’ai travaillé sur la partie back-end et front-end dans le
-                  cadre de mes stages et de mes formations.
-                </p>
-                <p className="mb-4">
-                  Surtout, j’ai développé plusieurs{" "}
-                  <strong>projets fullstack en autonomie</strong>, déjà en ligne
-                  et utilisés par de vrais utilisateurs. Ces projets m’ont
-                  permis de gérer l’ensemble de la chaîne : conception, base de
-                  données, API, interface utilisateur, déploiement et
-                  maintenance.
-                </p>
-                <p>
-                  Aujourd’hui, même si mon expérience “officielle” est plutôt
-                  orientée <strong>front-end / intégration</strong>, je suis
-                  tout à fait à l’aise sur un poste fullstack et habitué à
-                  prendre en charge un projet de bout en bout.
-                </p>
+                <ScrollReveal from="left" delay={0.75}>
+                  <time className="font-mono italic">futur</time>
+                  <div className="text-lg font-black">
+                    Developpeur Fullstack (MERN)
+                  </div>
+                  <p className="mb-4">
+                    Je n’ai pas encore occupé officiellement un poste de
+                    <strong> développeur fullstack</strong> en entreprise, mais
+                    j’ai travaillé sur la partie back-end et front-end dans le
+                    cadre de mes stages et de mes formations.
+                  </p>
+                  <p className="mb-4">
+                    Surtout, j’ai développé plusieurs{" "}
+                    <strong>projets fullstack en autonomie</strong>, déjà en
+                    ligne et utilisés par de vrais utilisateurs. Ces projets
+                    m’ont permis de gérer l’ensemble de la chaîne : conception,
+                    base de données, API, interface utilisateur, déploiement et
+                    maintenance.
+                  </p>
+                  <p>
+                    Aujourd’hui, même si mon expérience “officielle” est plutôt
+                    orientée <strong>front-end / intégration</strong>, je suis
+                    tout à fait à l’aise sur un poste fullstack et habitué à
+                    prendre en charge un projet de bout en bout.
+                  </p>
+                </ScrollReveal>
               </div>
               <hr />
             </li>
@@ -189,7 +199,7 @@ function About() {
             Parcours scolaire
           </h3>
 
-          <div className="flex flex-col gap-4 text-center w-[80%] justify-center mx-auto">
+          <div className="flex flex-col gap-4 text-center w-full lg:w-[80%] justify-center mx-auto">
             <p>
               Mon parcours scolaire a été, disons, <strong>sinueux</strong>,
               mais chaque étape m’a construit. Après mon{" "}

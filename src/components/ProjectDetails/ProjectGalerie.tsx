@@ -15,7 +15,7 @@ function ProjectGalerie({ images }: ProjectGalerieProps) {
   });
 
   return (
-    <div className="w-[80%] mx-auto">
+    <div className="w-full lg:w-[80%] mx-auto">
       <h2 className="text-center text-4xl font-semibold mb-10">Galerie</h2>
       <ul className="grid grid-cols-2 gap-5" ref={fancyboxRef}>
         {images.map((image, idx) => (
