@@ -2,12 +2,20 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import { useLenis } from "../../context/LenisContext";
+import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const location = useLocation();
   const navigate = useNavigate();
   const lenis = useLenis();
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -36,14 +44,21 @@ function Navbar() {
       navigate("/");
     }
 
+    const desktopBreakpoint = 768; // Tailwind's 'md' breakpoint by default
+    const desktopOffset = -80; // Offset for desktop sticky navbar
+    const mobileOffset = -60;  // Offset for mobile sticky navbar, adjust as needed
+
+    const offset = windowWidth >= desktopBreakpoint ? desktopOffset : mobileOffset;
+
+
     setTimeout(() => {
       if (lenis) {
-        lenis.scrollTo(hash, { offset: -80 }); // Offset for the sticky navbar
+        lenis.scrollTo(hash, { offset: offset });
       } else {
         // Fallback for when lenis is not available
         const targetElement = document.querySelector(hash);
         if (targetElement) {
-          const y = targetElement.getBoundingClientRect().top + window.scrollY - 80;
+          const y = targetElement.getBoundingClientRect().top + window.scrollY + offset; // Apply offset here
           window.scrollTo({ top: y, behavior: 'smooth' });
         }
       }
@@ -94,7 +109,7 @@ function Navbar() {
           </div>
 
           <nav className="navbar-center hidden md:flex">
-            <ul className="flex gap-5 text-base font-medium">{navLinks}</ul>
+            <ul className="flex gap-5 p-4 text-base font-medium">{navLinks}</ul>
           </nav>
 
           <div className="navbar-end flex items-center gap-4">
@@ -130,7 +145,7 @@ function Navbar() {
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-base-300">
+        <div className="flex justify-between items-center p-4 pl-5 border-b border-base-300">
           <h2 className="text-lg font-bold">Menu</h2>
           <button onClick={closeMenu} className="btn btn-ghost btn-circle">
             <svg
@@ -145,8 +160,20 @@ function Navbar() {
           </button>
         </div>
         <nav>
-          <ul className="flex flex-col gap-5 p-4 text-base font-medium">{navLinks}</ul>
+          <ul className="flex flex-col gap-5 p-4 pl-5 text-base font-medium">{navLinks}</ul>
         </nav>
+
+        <div className="flex items-center gap-4 absolute bottom-8 left-5">
+          <a className="p-2" href="https://mg.linkedin.com/in/franklin-hyriol-razafinandrasana-4b9a71217" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-3xl" />
+          </a>
+          <a className="p-2" href="https://www.facebook.com/franklin.hyriol/" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF className="text-3xl" />
+          </a>
+          <a className="p-2" href="https://github.com/Franklin-hyriol" target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-3xl" />
+          </a>
+        </div>
       </div>
     </>
   );
