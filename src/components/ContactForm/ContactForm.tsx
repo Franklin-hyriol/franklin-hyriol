@@ -11,6 +11,7 @@ import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
+import ScrollReveal from "../ScrollReveal/ScrollReveal";
 
 const contactSchema = z.object({
   title: z.string().min(2, { message: "Le titre est obligatoire" }),
@@ -92,77 +93,85 @@ function ContactFormContent() {
             onSubmit={handleSubmit(submitData)}
             className="flex flex-col gap-4"
           >
-            <div className="form-control">
-              <label className="label block mb-2">
-                <span className="label-text font-medium">Titre</span>
-              </label>
-              <input
-                type="text"
-                placeholder="J'ai besoin de..."
-                className={`input input-bordered w-full ${
-                  errors.title ? "input-error" : ""
-                }`}
-                {...register("title")}
-              />
-              {errors.title && (
-                <small className="text-error mt-1">
-                  {errors.title.message}
-                </small>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label className="label block mb-2">
-                <span className="label-text font-medium">
-                  Votre adresse e-mail (facultatif)
-                </span>
-              </label>
-              <input
-                type="email"
-                placeholder="votre.email@example.com"
-                className={`input input-bordered w-full ${
-                  errors.email ? "input-error" : ""
-                }`}
-                {...register("email")}
-              />
-              {errors.email && (
-                <small className="text-error mt-1">
-                  {errors.email.message}
-                </small>
-              )}
-            </div>
-
-            <div className="form-control">
-              <label className="label block mb-2">
-                <span className="label-text font-medium">Message</span>
-              </label>
-              <textarea
-                className={`textarea textarea-bordered w-full min-h-46 ${
-                  errors.message ? "textarea-error" : ""
-                }`}
-                placeholder="Votre message détaillé ici..."
-                {...register("message")}
-              ></textarea>
-              {errors.message && (
-                <small className="text-error mt-1">
-                  {errors.message.message}
-                </small>
-              )}
-            </div>
-
-            <div className="card-actions justify-end mt-4">
-              <button
-                type="submit"
-                className="btn btn-primary"
-                disabled={isLoading}
-              >
-                {isLoading ? (
-                  <span className="loading loading-spinner"></span>
-                ) : (
-                  "Envoyer le message"
+            <ScrollReveal>
+              <div className="form-control">
+                <label className="label block mb-2">
+                  <span className="label-text font-medium">Titre</span>
+                </label>
+                <input
+                  type="text"
+                  placeholder="J'ai besoin de..."
+                  className={`input input-bordered w-full ${
+                    errors.title ? "input-error" : ""
+                  }`}
+                  {...register("title")}
+                />
+                {errors.title && (
+                  <small className="text-error mt-1">
+                    {errors.title.message}
+                  </small>
                 )}
-              </button>
-            </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.35}>
+              <div className="form-control">
+                <label className="label block mb-2">
+                  <span className="label-text font-medium">
+                    Votre adresse e-mail (facultatif)
+                  </span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="votre.email@example.com"
+                  className={`input input-bordered w-full ${
+                    errors.email ? "input-error" : ""
+                  }`}
+                  {...register("email")}
+                />
+                {errors.email && (
+                  <small className="text-error mt-1">
+                    {errors.email.message}
+                  </small>
+                )}
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.45}>
+              <div className="form-control">
+                <label className="label block mb-2">
+                  <span className="label-text font-medium">Message</span>
+                </label>
+                <textarea
+                  className={`textarea textarea-bordered w-full min-h-46 ${
+                    errors.message ? "textarea-error" : ""
+                  }`}
+                  placeholder="Votre message détaillé ici..."
+                  {...register("message")}
+                ></textarea>
+                {errors.message && (
+                  <small className="text-error mt-1">
+                    {errors.message.message}
+                  </small>
+                )}
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal delay={0.55}>
+              <div className="card-actions justify-end mt-4">
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <span className="loading loading-spinner"></span>
+                  ) : (
+                    "Envoyer le message"
+                  )}
+                </button>
+              </div>
+            </ScrollReveal>
           </form>
         </div>
       </div>
