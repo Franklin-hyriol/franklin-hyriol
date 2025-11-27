@@ -18,7 +18,7 @@ const VerletJsPage = () => {
           <ProjectHeader
             title="Verlet Js"
             description="Verlet.js est une bibliothèque JavaScript et React conçue pour simplifier la création de simulations physiques basées sur l'algorithme d'intégration de Verlet. Elle permet de simuler facilement des systèmes complexes comme des cordes, des tissus ou des particules interconnectées, avec une API simple et performante."
-            live="https://github.com/Franklin-hyriol/verletjs"
+            live="https://verlet.pages.dev/"
             github="https://github.com/Franklin-hyriol/verletjs"
           />
         </ScrollReveal>

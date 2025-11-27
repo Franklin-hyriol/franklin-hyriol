@@ -58,7 +58,7 @@
         "title": "verlet Js",
         "description": "Verlet.js est une bibliothèque pour JavaScript et React, permettant de créer des simulations de mouvements basées sur l’algorithme de Verlet.",
         "image": "/screenshot/verletjs.png",
-        "alt": "verlet screenshot #",
+        "alt": "verlet screenshot https://verlet.pages.dev/",
         "type": "vanilla React",
         "url": "/project/verlet-js"
     },
