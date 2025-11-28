@@ -14,7 +14,7 @@ function ProjectCard({ image, alt, title, description, type, url }: ProjectCardP
     <Link className="hover-3d" to={url} data-type={type}>
       {/* content */}
 
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-base-100 w-96 shadow-sm my-0 mx-auto">
         <figure>
           <img
             src={image}
