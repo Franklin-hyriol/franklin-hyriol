@@ -15,7 +15,7 @@ function ProjectHeader({
   return (
     <div className="text-center flex flex-col gap-6">
       <h1 className="text-5xl font-bold mb-4">{title}</h1>
-      <p className="text-lg text-gray-700">{description}</p>
+      <p className="text-lg">{description}</p>
 
       <div className="flex justify-center items-center gap-4">
         <a
